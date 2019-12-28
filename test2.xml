@@ -33,16 +33,19 @@
                 <LinearLayout
                     android:id="@+id/content1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <TextView
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler1"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="#8BC34A"
-                        android:gravity="center"
-                        android:padding="8dp"
-                        android:text="@string/Tab1" />
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:overScrollMode="never"
+                        android:scrollbars="vertical"
+
+                        />
 
                 </LinearLayout>
 
@@ -80,6 +83,8 @@
 
                 </LinearLayout>
             </FrameLayout>
+
+
         </LinearLayout>
     </TabHost>
 </RelativeLayout>
